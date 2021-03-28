@@ -2,17 +2,15 @@
 c# updater programme 
 
 # wymagania:
-
-visual studio 2019
+- visual studio 2019
 
 nuget:
-DotNetZip/ionic
-costura.fody
+- DotNetZip/ionic
+- costura.fody
 
-1x serwer
-na ktorym jest
-version.txt (wersja do sprawdzania z lokalna)
-package.zip (jesli jest nowa wersja updater pobiera i wypakowywuje)
+1x serwer https na ktorym jest
+- version.txt (wersja do sprawdzania z lokalna)
+- package.zip (jesli jest nowa wersja updater pobiera i wypakowywuje)
 
 # struktura pliku package.zip, plik version.txt
 
