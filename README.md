@@ -20,3 +20,6 @@ package.zip
 - sfx.zip
 
 The version.txt file lives in the app.zip file. The version.txt file in the zip has to be exactly the same as version.txt from the server, otherwise the updater will update the game every single time it is ran. This format can be customized to your liking and file structure in the UpdateGame() method - it's just a zip file.
+
+# Other
+The server that's currently specified in the code does not work anymore, so replace it with your own (you should've done that either way). I've provided a sample package.zip and version.txt file in the Examples folder in the root directory.
