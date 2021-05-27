@@ -23,3 +23,5 @@ The version.txt file lives in the app.zip file. The version.txt file in the zip 
 
 # Other
 The server that's currently specified in the code does not work anymore, so replace it with your own (you should've done that either way). I've provided a sample package.zip and version.txt file in the Examples folder in the root directory.
+
+Please don't actually use this in production or anything - this is actually really horribly written. Everything's in a single file and it's really hard to manage. I hope I'll have some time soon to rewrite this.
