@@ -1,24 +1,22 @@
 # tomek-updater
-c# updater programme 
+A C# app that automatically updates a game without user interaction.
 
-# wymagania:
-- visual studio 2019
+# Requirements
+- Visual Studio 2019 Community
 
-nuget:
-- DotNetZip/ionic
-- costura.fody
+Nuget:
+- DotNetZip.Ionic
+- Costura.Fody
 
-1x serwer https na ktorym jest
-- version.txt (wersja do sprawdzania z lokalna)
-- package.zip (jesli jest nowa wersja updater pobiera i wypakowywuje)
+1 HTTP server that has the following files:
+- version.txt (this file will be used to compare the game version on disk and the server's version)
+- package.zip (if the version.txt file on the server is different compared to the version on disk, the program automatically downloads and extracts this file)
 
-# struktura pliku package.zip, plik version.txt
+# package.zip file structure
 
 package.zip
 - app.zip
 - gfx.zip
 - sfx.zip
 
-w app.zip znajduje sie plik version.txt ktory musi byc taki sam jak version.txt na serwerze
-
-format pliku package.zip mozna zmienic w UpdateGame(); ale wazne zeby zachowac plik version.txt
+The version.txt file lives in the app.zip file. The version.txt file in the zip has to be exactly the same as version.txt from the server, otherwise the updater will update the game every single time it is ran. This format can be customized to your liking and file structure in the UpdateGame() method - it's just a zip file.
