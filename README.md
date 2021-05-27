@@ -2,18 +2,19 @@
 A C# app that automatically updates a game without user interaction.
 
 # Requirements
+Software / Build Tools
 - Visual Studio 2019 Community
+- .NET Framework 4.7.2
 
-Nuget:
+NuGet:
 - DotNetZip.Ionic
 - Costura.Fody
 
-1 HTTP server that has the following files:
+An HTTP server that has the following files:
 - version.txt (this file will be used to compare the game version on disk and the server's version)
 - package.zip (if the version.txt file on the server is different compared to the version on disk, the program automatically downloads and extracts this file)
 
 # package.zip file structure
-
 package.zip
 - app.zip
 - gfx.zip
