@@ -1,5 +1,5 @@
 # tomek-updater
-A C# app that automatically updates a game without user interaction.
+A C# app that automatically updates a game without user interaction. Designed to look like the Steam / FiveM updaters (and kinda work in the same way)
 
 # Requirements
 Software / Build Tools
